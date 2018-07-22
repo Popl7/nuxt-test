@@ -52,6 +52,9 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  modules: [
+    'nuxt-vuex-router-sync',
+  ]
 }
 

@@ -14,15 +14,15 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.0.0",
+    "nuxt-vuex-router-sync": "^0.0.2"
   },
   "devDependencies": {
+    "axios": "latest",
     "babel-eslint": "^8.2.1",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0",
-    "axios": "latest"
+    "eslint-plugin-vue": "^4.0.0"
   }
 }
-
