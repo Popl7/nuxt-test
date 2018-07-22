@@ -1,14 +1,20 @@
 <template>
   <div>
-    <nav>
-      <router-link to="/">Home</router-link>
-      <router-link to="/counter">Counter</router-link>
-    </nav>
-    <div id="main">
-      <nuxt/>
-    </div>
+    <nav-bar/>
+    <nuxt/>
   </div>
 </template>
+
+<script>
+import NavBar from '~/components/NavBar.vue'
+
+export default {
+  components: {
+    NavBar
+  }
+}
+</script>
+
 
 <style>
 html {
