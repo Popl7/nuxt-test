@@ -10,6 +10,9 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/counter">Counter</router-link>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/users">Users</router-link>
+          </li>
         </ul>
       </div>
     </nav>
