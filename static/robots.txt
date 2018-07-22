@@ -1,0 +1,9 @@
+User-agent: *
+
+sitemap: https://bla.nl/sitemap_index.xml
+
+Disallow: /setup/
+Disallow: /cgi-bin
+Disallow: /images/
+Disallow: /photos/
+Disallow: /dealers/

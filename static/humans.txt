@@ -1,0 +1,14 @@
+/* TEAM */
+	Developer: Steven Thonus.
+	Site: infi.nl.
+	Twitter: Je Twitter gebruikersnaam.
+	Locatie: Utrecht, Nederland.
+
+/* THANKS */
+	Matthijs: matthijs
+
+/* SITE */
+	Laatste aanpassing: JJJJ/MM/DD
+	Standaarden: HTML5, CSS3,..
+	Componenten: Modernizr, jQuery, etc.
+	Software: Software gebruikt bij de ontwikkeling
