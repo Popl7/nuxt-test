@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <h2>Users</h2>
+    <div v-if="loading">loading...</div>
     <ul class="users">
       <li v-for="user in users" :key="user.id">
         <nuxt-link :to="'/users/'+user.id">{{ user.name }}</nuxt-link>
@@ -10,12 +11,19 @@
 </template>
 
 <script>
+import { mapState, mapActions } from 'vuex'
 import axios from 'axios'
 
 export default {
-  async asyncData() {
-    const { data } = await axios.get('https://jsonplaceholder.typicode.com/users')
-    return { users: data }
+  // async fetch ({ store, params }) {
+  //   await store.dispatch('users/getUsers')
+  // },
+  computed: mapState({
+    users: state => state.users.list,
+    loading: state => state.users.loading
+  }),
+  created () {
+    this.$store.dispatch('users/getUsers')
   }
 }
 </script>
